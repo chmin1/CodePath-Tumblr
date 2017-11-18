@@ -63,6 +63,23 @@ class photosViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         return cell;
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! photoDetailViewController;
+        
+        let cell = sender as! UITableViewCell;
+        
+        let indexPath = tumblrView.indexPath(for: cell)!;
+        
+        let post = posts[indexPath.row];
+        let photos = post["photos"] as! [[String:Any]];
+        let photo = photos[0];
+        let originalSize = photo["original_size"] as! [String: Any];
+        let urlString = originalSize["url"] as! String;
+        
+        destVC.imageURL = URL(string: urlString);
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -74,10 +91,7 @@ class photosViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
+    
     */
 
 }
