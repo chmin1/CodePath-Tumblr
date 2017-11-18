@@ -18,6 +18,7 @@
 		F94B35B61FBF17B500FA6D76 /* CodePath_TumblrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94B35B51FBF17B500FA6D76 /* CodePath_TumblrUITests.swift */; };
 		F94B35C41FBF1F5B00FA6D76 /* photosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94B35C31FBF1F5B00FA6D76 /* photosViewController.swift */; };
 		F94B35C61FBF7CA700FA6D76 /* TumblrCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94B35C51FBF7CA700FA6D76 /* TumblrCell.swift */; };
+		F94B35C81FC0C94A00FA6D76 /* photoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94B35C71FC0C94A00FA6D76 /* photoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		F94B35B71FBF17B500FA6D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F94B35C31FBF1F5B00FA6D76 /* photosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photosViewController.swift; sourceTree = "<group>"; };
 		F94B35C51FBF7CA700FA6D76 /* TumblrCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrCell.swift; sourceTree = "<group>"; };
+		F94B35C71FC0C94A00FA6D76 /* photoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				F94B35951FBF17B500FA6D76 /* AppDelegate.swift */,
 				F94B35C31FBF1F5B00FA6D76 /* photosViewController.swift */,
+				F94B35C71FC0C94A00FA6D76 /* photoDetailViewController.swift */,
 				F94B35991FBF17B500FA6D76 /* Main.storyboard */,
 				F94B359C1FBF17B500FA6D76 /* Assets.xcassets */,
 				F94B359E1FBF17B500FA6D76 /* LaunchScreen.storyboard */,
@@ -465,6 +468,7 @@
 			files = (
 				F94B35961FBF17B500FA6D76 /* AppDelegate.swift in Sources */,
 				F94B35C61FBF7CA700FA6D76 /* TumblrCell.swift in Sources */,
+				F94B35C81FC0C94A00FA6D76 /* photoDetailViewController.swift in Sources */,
 				F94B35C41FBF1F5B00FA6D76 /* photosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
